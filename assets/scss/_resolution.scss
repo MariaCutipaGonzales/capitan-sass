@@ -6,18 +6,8 @@
     font-family: $font-family;
 }
 
-$breakpoint-small: "only screen and (min-width: 400px)";
-$breakpoint-medium: "only screen and (min-width: 800px)";
-$breakpoint-large: "only screen and (min-width: 1200px)";
-
-@for $i from 1 through $grid-columns {
-    .column-#{$i} { 
-        width: 100% / $grid-columns * $i;
-    }
-}
-
 @function column($n){
-    @return 100% / $n
+    @return 100% / $n;
 }
 .text-center{
     text-align: center;
@@ -32,18 +22,4 @@ $breakpoint-large: "only screen and (min-width: 1200px)";
     margin: auto;
 }
 
-/*
 
-@media #{$breakpoint-medium} {
-    #main {      
-        width: 95%;
-        max-width: $grid-max-width;     
-        }
-    @for $i from 1 through $grid-columns {      
-        .column-#{$i} {         
-            width: 100% / $grid-columns * $i;   
-            }           
-        }   
-    }
-
-*/
