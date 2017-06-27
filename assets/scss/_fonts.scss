@@ -1,0 +1,21 @@
+$font-family : 'Roboto', sans-serif;
+$bold : bold;
+
+@mixin font-size($size:1.6){
+    font-size: ($size * 10)+px;
+    /*font-size: $size + rem;*/
+}
+
+h1{
+    @include font-size(4);
+}
+
+.bold{
+    font-weight: $bold;
+}
+
+#recomendacion {
+    p{
+        @include font-size(1.2);
+    }
+}

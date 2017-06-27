@@ -1,0 +1,24 @@
+$principal :#F7B617;
+$gray: #3E3F40;
+$white : #ffffff;
+$black : #000;
+
+header{
+    background: $principal;
+    padding: 2%;
+}
+footer{
+    width: 100%;
+}
+
+.bg-gray{
+    background: $gray;
+}
+
+.bg-orange{
+    background: $principal;
+}
+
+.bg-black{
+    color: $black;
+}
